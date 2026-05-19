@@ -1,0 +1,30 @@
+[project]
+name = "recruit-eval"
+version = "0.1.0"
+description = "An open core evaluation + replay harness for recruiting agents: deterministic regression on your firm's own historical placements, with shor"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Tarun Aditya Kusupati" }
+]
+dependencies = []
+
+[project.scripts]
+recruit-eval = "recruit_eval.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

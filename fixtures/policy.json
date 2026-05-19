@@ -1,0 +1,18 @@
+{
+  "company": "Spott",
+  "repo": "recruit-eval",
+  "metrics": [
+    "spott_coverage",
+    "publicly_risk",
+    "committed_precision",
+    "agentic_latency"
+  ],
+  "failure_modes": [
+    "spott_drift",
+    "publicly_gap",
+    "committed_misroute",
+    "agentic_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}

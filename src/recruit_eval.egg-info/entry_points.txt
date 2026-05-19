@@ -1,0 +1,2 @@
+[console_scripts]
+recruit-eval = recruit_eval.cli:main
