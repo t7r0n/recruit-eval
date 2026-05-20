@@ -1,6 +1,6 @@
 {
-  "repo": "recruit-eval",
-  "company": "Recruit Eval",
+  "repo": "outbound-agent-eval",
+  "company": "Outbound Agent Eval",
   "rubric_axes": [
     {
       "axis": "evidence_coverage",

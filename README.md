@@ -1,35 +1,35 @@
-# Recruit Eval
+# Outbound Agent Eval
 
-An open core evaluation + replay harness for recruiting agents: deterministic regression on your firm's own historical placements, with shortlist taste and outreach tone scoring before the agent ever goes live in a customer's tenant.
+A local evaluation and replay harness for recruiting agents: deterministic regression on synthetic placement histories, with shortlist fit and outreach tone scoring before an agent is allowed into a live workflow.
 
-![Recruit Eval working dashboard](outputs/project_working.svg)
+![Outbound Agent Eval working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Recruit Eval has publicly committed to "agentic workflows" but the visible product surface (and the Recruit Eval app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped — and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well — is eval grounded outbound from the agent itself..
+Recruiting agents can generate shortlists, outreach, and handoff notes at high speed, but teams need proof that the agent preserves placement taste, tone, evidence grounding, and candidate relevance before it contacts real people.
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
 ## What is inside
 
 - Deterministic fixture generation for the company-specific risk surface.
-- Strategy code in `src/recruit_eval/strategy.py` with project-specific scoring and visual evidence.
+- Strategy code in `src/outbound_agent_eval/strategy.py` with project-specific scoring and visual evidence.
 - Citation-locked reports where every decision claim points to a generated evidence ID.
 - Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
 - A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
-![Recruit Eval evidence map](outputs/evidence_map.svg)
+![Outbound Agent Eval evidence map](outputs/evidence_map.svg)
 
 ## Signals it measures
 
-- `Recruit Eval coverage`
+- `Evidence coverage`
 - `publicly risk`
 - `committed precision`
 - `agentic latency`
 
 ## Failure modes it plants
 
-- Recruit Eval drift
+- evidence drift
 - publicly gap
 - committed misroute
 - agentic blindspot
@@ -38,7 +38,7 @@ The project is intentionally built as a local replay harness instead of a slide.
 
 ```bash
 uv sync
-uv run recruit-eval all
+uv run outbound-agent-eval all
 uv run pytest -q
 uv run ruff check .
 ```

@@ -1,4 +1,4 @@
-# Failure Matrix: Recruit Eval
+# Failure Matrix: Outbound Agent Eval
 
 | Scenario | Failure mode | Metric | Gate | Evidence |
 | --- | --- | --- | --- | --- |

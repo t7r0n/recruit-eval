@@ -1,12 +1,12 @@
 {
-  "company": "Recruit Eval",
-  "company_slug": "recruit-eval",
-  "repo": "recruit-eval",
-  "package": "recruit_eval",
-  "cli": "recruit-eval",
-  "title": "Recruit Eval",
-  "problem": "Recruit Eval has publicly committed to \"agentic workflows\" but the visible product surface (and the Recruit Eval app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped - and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well - is eval grounded outbound from the agent itself. Agency recruiters live and die by reply rate.",
-  "direction": "An open core evaluation + replay harness for recruiting agents: deterministic regression on your firm's own historical placements, with shortlist taste and outreach tone scoring before the agent ever goes live in a customer's tenant.",
+  "company": "Outbound Agent Eval",
+  "company_slug": "outbound-agent-eval",
+  "repo": "outbound-agent-eval",
+  "package": "outbound_agent_eval",
+  "cli": "outbound-agent-eval",
+  "title": "Outbound Agent Eval",
+  "problem": "Recruiting agents can generate shortlists, outreach, and handoff notes at high speed, but teams need proof that the agent preserves placement taste, tone, evidence grounding, and candidate relevance before it contacts real people.",
+  "direction": "A local evaluation and replay harness for recruiting agents: deterministic regression on synthetic placement histories, with shortlist fit and outreach tone scoring before an agent is allowed into a live workflow.",
   "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
     "evidence",
@@ -57,5 +57,5 @@
     }
   ],
   "sources": [],
-  "github_url": "https://github.com/t7r0n/recruit-eval"
+  "github_url": "https://github.com/t7r0n/outbound-agent-eval"
 }

@@ -1,7 +1,7 @@
 [project]
-name = "recruit-eval"
+name = "outbound-agent-eval"
 version = "0.1.0"
-description = "An open core evaluation + replay harness for recruiting agents: deterministic regression on your firm's own historical p"
+description = "Local evaluation and replay harness for recruiting-agent shortlist and outreach quality."
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
@@ -10,7 +10,7 @@ authors = [
 dependencies = []
 
 [project.scripts]
-recruit-eval = "recruit_eval.cli:main"
+outbound-agent-eval = "outbound_agent_eval.cli:main"
 
 [dependency-groups]
 dev = [

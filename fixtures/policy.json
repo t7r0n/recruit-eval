@@ -1,6 +1,6 @@
 {
-  "company": "Recruit Eval",
-  "repo": "recruit-eval",
+  "company": "Outbound Agent Eval",
+  "repo": "outbound-agent-eval",
   "metrics": [
     "evidence_coverage",
     "handoff_risk",

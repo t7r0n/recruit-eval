@@ -1,13 +1,13 @@
-# Operator Brief: Recruit Eval
+# Operator Brief: Outbound Agent Eval
 
 This local harness runs a deterministic pressure test around evidence, workflow, and review. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
 - evidence replay -> block release until cited evidence is regenerated (evidence_coverage, evidence ev_0044).
-- review operator packet -> accept only if decision claims cite fixture evidence (handoff_risk, evidence ev_0099).
-- claim regression harness -> open a regression issue with trace and benchmark delta (claim_precision, evidence ev_0066).
-- handoff boundary probe -> route to reviewer with evidence packet (review_latency, evidence ev_0077).
+- review operator packet -> accept only if decision claims cite fixture evidence (handoff_risk, evidence ev_0055).
+- claim regression harness -> open a regression issue with trace and benchmark delta (claim_precision, evidence ev_0110).
+- handoff boundary probe -> route to reviewer with evidence packet (review_latency, evidence ev_0033).
 
 ## What makes this useful
 
