@@ -6,15 +6,15 @@ from pathlib import Path
 from typing import Any
 
 
-COMPANY = 'Spott'
+COMPANY = 'Recruit Eval'
 REPO = 'recruit-eval'
-PROJECT_TERMS = ['spott', 'publicly', 'committed', 'agentic', 'workflows', 'visible', 'product', 'surface']
-PROJECT_METRICS = ['spott_coverage', 'publicly_risk', 'committed_precision', 'agentic_latency']
-PROJECT_FAILURES = ['spott_drift', 'publicly_gap', 'committed_misroute', 'agentic_blindspot']
-PROJECT_ARCHETYPES = [{'name': 'spott evidence replay', 'trigger': 'spott signal changes while publicly context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'publicly boundary probe', 'trigger': 'publicly handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'committed regression harness', 'trigger': 'committed behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'agentic operator packet', 'trigger': 'agentic output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
+PROJECT_TERMS = ['evidence', 'workflow', 'review', 'claims', 'fixtures', 'replay', 'handoff', 'trace', 'policy', 'decision', 'coverage', 'latency']
+PROJECT_METRICS = ['evidence_coverage', 'handoff_risk', 'claim_precision', 'review_latency']
+PROJECT_FAILURES = ['evidence_drift', 'handoff_gap', 'claim_misroute', 'review_blindspot']
+PROJECT_ARCHETYPES = [{'name': 'evidence replay', 'trigger': 'source evidence changes while workflow context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'handoff boundary probe', 'trigger': 'handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'claim regression harness', 'trigger': 'claim behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'review operator packet', 'trigger': 'review output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
 PROJECT_DIRECTION = "An open core evaluation + replay harness for recruiting agents: deterministic regression on your firm's own historical placements, with shortlist taste and outreach tone scoring before the agent ever goes live in a customer's tenant."
 VISUAL_THEME = {'name': 'agent security', 'bg': '#f7f8fb', 'ink': '#111827', 'muted': '#475569', 'border': '#d8e1ec', 'a': '#2563eb', 'b': '#0891b2', 'c': '#7c3aed', 'd': '#dc2626', 'soft_a': '#eff6ff', 'soft_b': '#ecfeff', 'soft_c': '#f5f3ff', 'soft_d': '#fef2f2', 'hero': 'Adversarial Replay Board', 'left': 'runtime probes with evidence', 'right': 'release gates under attack', 'chain': 'attack-to-action chain', 'lane': 'probe', 'gate': 'guard failure', 'action': 'release action'}
-HERO_TITLE = 'Spott Adversarial Replay Board'
+HERO_TITLE = 'Recruit Eval'
 
 
 def _short(value: str, limit: int = 44) -> str:
@@ -107,7 +107,7 @@ def build_signal_model(rows: list[dict[str, Any]], clusters: list[dict[str, Any]
         "review_share": round(review / total, 4),
         "top_leverage_points": leverage,
         "readout": (
-            f"{COMPANY} gets a local, deterministic pressure test around "
+            "This local harness runs a deterministic pressure test around "
             f"{PROJECT_TERMS[0]}, {PROJECT_TERMS[1]}, and {PROJECT_TERMS[2]}. "
             "The useful part is the repeatable evidence path from fixture "
             "to failure to operator action."

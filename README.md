@@ -6,7 +6,7 @@ An open core evaluation + replay harness for recruiting agents: deterministic re
 
 ## Why it exists
 
-Spott has publicly committed to "agentic workflows" but the visible product surface (and the Spott app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped — and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well — is eval grounded outbound from the agent itself..
+Recruit Eval has publicly committed to "agentic workflows" but the visible product surface (and the Recruit Eval app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped — and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well — is eval grounded outbound from the agent itself..
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -22,14 +22,14 @@ The project is intentionally built as a local replay harness instead of a slide.
 
 ## Signals it measures
 
-- `spott coverage`
+- `Recruit Eval coverage`
 - `publicly risk`
 - `committed precision`
 - `agentic latency`
 
 ## Failure modes it plants
 
-- spott drift
+- Recruit Eval drift
 - publicly gap
 - committed misroute
 - agentic blindspot
@@ -52,18 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://spott.io/careers
-- https://spott.io/jobs/software-engineer
-- https://www.ycombinator.com/companies/spott
-- https://venturebeat.com/ai/spotts-ai-native-recruiting-platform-scores-3-2m-to-end-hiring-software-chaos
-- https://getlatka.com/companies/spott.io
-- https://www.linkedin.com/in/lander-degr%C3%A8ve/
-- https://www.linkedin.com/in/manuvanderveeren/
-- https://www.linkedin.com/posts/lander-degr%C3%A8ve_spott-app-is-now-live-it-starts-by-solving-activity-7406339909176807425-LdZD
-- https://www.fortino.vc/news/spott-raises-32-million-bolster-its-ai-native-recruitment-platform
 
 ## Boundary
 

@@ -1,67 +1,57 @@
 {
   "repo": "recruit-eval",
-  "company": "Spott",
+  "company": "Recruit Eval",
   "rubric_axes": [
     {
-      "axis": "spott_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "spott_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "publicly_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "publicly_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "committed_precision",
+      "axis": "claim_precision",
       "failures": [
-        "committed_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "agentic_latency",
+      "axis": "review_latency",
       "failures": [
-        "agentic_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "spott evidence replay",
-      "trigger": "spott signal changes while publicly context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "publicly boundary probe",
-      "trigger": "publicly handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "committed regression harness",
-      "trigger": "committed behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "agentic operator packet",
-      "trigger": "agentic output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://spott.io/careers",
-    "https://spott.io/jobs/software-engineer",
-    "https://www.ycombinator.com/companies/spott",
-    "https://venturebeat.com/ai/spotts-ai-native-recruiting-platform-scores-3-2m-to-end-hiring-software-chaos",
-    "https://getlatka.com/companies/spott.io",
-    "https://www.linkedin.com/in/lander-degr%C3%A8ve/",
-    "https://www.linkedin.com/in/manuvanderveeren/",
-    "https://www.linkedin.com/posts/lander-degr%C3%A8ve_spott-app-is-now-live-it-starts-by-solving-activity-7406339909176807425-LdZD",
-    "https://www.fortino.vc/news/spott-raises-32-million-bolster-its-ai-native-recruitment-platform"
-  ]
+  "sources_used": []
 }

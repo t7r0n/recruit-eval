@@ -1,77 +1,61 @@
 {
-  "company": "Spott",
-  "company_slug": "spott",
+  "company": "Recruit Eval",
+  "company_slug": "recruit-eval",
   "repo": "recruit-eval",
   "package": "recruit_eval",
   "cli": "recruit-eval",
   "title": "Recruit Eval",
-  "problem": "Spott has publicly committed to \"agentic workflows\" but the visible product surface (and the Spott app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped \u2014 and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well \u2014 is eval grounded outbound from the agent itself. Agency recruiters live and die by reply rate.",
+  "problem": "Recruit Eval has publicly committed to \"agentic workflows\" but the visible product surface (and the Recruit Eval app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped - and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well - is eval grounded outbound from the agent itself. Agency recruiters live and die by reply rate.",
   "direction": "An open core evaluation + replay harness for recruiting agents: deterministic regression on your firm's own historical placements, with shortlist taste and outreach tone scoring before the agent ever goes live in a customer's tenant.",
-  "why": "The taste call is scoping to evaluation, not to building more agents. Spott already has agents; they don't have a moat around them. The moat is the closed loop on their customers' historical data - and an outsider built that.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "spott",
-    "publicly",
-    "committed",
-    "agentic",
-    "workflows",
-    "visible",
-    "product",
-    "surface",
-    "announcement",
-    "still",
-    "table",
-    "stakes",
-    "pipelines",
-    "outreach",
-    "transcripts",
-    "scheduling",
-    "problem",
-    "shipped"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "spott_coverage",
-    "publicly_risk",
-    "committed_precision",
-    "agentic_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "spott_drift",
-    "publicly_gap",
-    "committed_misroute",
-    "agentic_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "spott evidence replay",
-      "trigger": "spott signal changes while publicly context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "publicly boundary probe",
-      "trigger": "publicly handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "committed regression harness",
-      "trigger": "committed behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "agentic operator packet",
-      "trigger": "agentic output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://spott.io/careers",
-    "https://spott.io/jobs/software-engineer",
-    "https://www.ycombinator.com/companies/spott",
-    "https://venturebeat.com/ai/spotts-ai-native-recruiting-platform-scores-3-2m-to-end-hiring-software-chaos",
-    "https://getlatka.com/companies/spott.io",
-    "https://www.linkedin.com/in/lander-degr%C3%A8ve/",
-    "https://www.linkedin.com/in/manuvanderveeren/",
-    "https://www.linkedin.com/posts/lander-degr%C3%A8ve_spott-app-is-now-live-it-starts-by-solving-activity-7406339909176807425-LdZD",
-    "https://www.fortino.vc/news/spott-raises-32-million-bolster-its-ai-native-recruitment-platform"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/recruit-eval"
 }
