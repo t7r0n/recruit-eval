@@ -1,0 +1,59 @@
+{
+  "layers": [
+    {
+      "name": "synthetic_fixture_replay",
+      "purpose": "exercise spott and publicly cases"
+    },
+    {
+      "name": "domain_strategy",
+      "purpose": "score spott_coverage and publicly_risk"
+    },
+    {
+      "name": "evidence_lock",
+      "purpose": "reject narrative claims without fixture evidence IDs"
+    },
+    {
+      "name": "operator_packet",
+      "purpose": "emit dashboard, SVG readout, CSV, markdown report, and demo pack"
+    }
+  ],
+  "pressure_index": 0.3167,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "spott evidence replay",
+      "metric": "spott_coverage",
+      "failure_mode": "spott_drift",
+      "evidence": "ev_0088",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "agentic operator packet",
+      "metric": "publicly_risk",
+      "failure_mode": "publicly_gap",
+      "evidence": "ev_0143",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "committed regression harness",
+      "metric": "committed_precision",
+      "failure_mode": "committed_misroute",
+      "evidence": "ev_0110",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "publicly boundary probe",
+      "metric": "agentic_latency",
+      "failure_mode": "agentic_blindspot",
+      "evidence": "ev_0033",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ]
+}

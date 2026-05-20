@@ -1,0 +1,69 @@
+{
+  "company": "Spott",
+  "repo": "recruit-eval",
+  "terms": [
+    "spott",
+    "publicly",
+    "committed",
+    "agentic",
+    "workflows",
+    "visible",
+    "product",
+    "surface"
+  ],
+  "metrics": [
+    "spott_coverage",
+    "publicly_risk",
+    "committed_precision",
+    "agentic_latency"
+  ],
+  "failure_modes": [
+    "spott_drift",
+    "publicly_gap",
+    "committed_misroute",
+    "agentic_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "spott evidence replay",
+      "metric": "spott_coverage",
+      "failure_mode": "spott_drift",
+      "evidence": "ev_0088",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "agentic operator packet",
+      "metric": "publicly_risk",
+      "failure_mode": "publicly_gap",
+      "evidence": "ev_0143",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "committed regression harness",
+      "metric": "committed_precision",
+      "failure_mode": "committed_misroute",
+      "evidence": "ev_0110",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "publicly boundary probe",
+      "metric": "agentic_latency",
+      "failure_mode": "agentic_blindspot",
+      "evidence": "ev_0033",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Spott gets a local, deterministic pressure test around spott, publicly, and committed. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}
