@@ -6,17 +6,17 @@ An open core evaluation + replay harness for recruiting agents: deterministic re
 
 ## Why it exists
 
-Spott has publicly committed to "agentic workflows" but the visible product surface (and the Spott app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling.
+Spott has publicly committed to "agentic workflows" but the visible product surface (and the Spott app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped — and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well — is eval grounded outbound from the agent itself..
 
-Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
+The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
 ## What is inside
 
-- A deterministic replay harness tuned around spott, publicly, and committed.
-- Company-specific strategy code in `src/recruit_eval/strategy.py`, not just README-level customization.
-- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
-- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
-- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+- Deterministic fixture generation for the company-specific risk surface.
+- Strategy code in `src/recruit_eval/strategy.py` with project-specific scoring and visual evidence.
+- Citation-locked reports where every decision claim points to a generated evidence ID.
+- Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
 ![Recruit Eval evidence map](outputs/evidence_map.svg)
 

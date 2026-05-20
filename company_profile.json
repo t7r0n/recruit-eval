@@ -5,7 +5,7 @@
   "package": "recruit_eval",
   "cli": "recruit-eval",
   "title": "Recruit Eval",
-  "problem": "Spott has publicly committed to \"agentic workflows\" but the visible product surface (and the Spott app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped - and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well - is eval grounded outbound from the agent itself. Agency recruiters live and die by reply rate.",
+  "problem": "Spott has publicly committed to \"agentic workflows\" but the visible product surface (and the Spott app announcement) is still ATS/CRM table stakes: pipelines, outreach, transcripts, scheduling. The hard problem they have not yet shipped \u2014 and that no incumbent ATS (Bullhorn, JobAdder, Vincere) does well \u2014 is eval grounded outbound from the agent itself. Agency recruiters live and die by reply rate.",
   "direction": "An open core evaluation + replay harness for recruiting agents: deterministic regression on your firm's own historical placements, with shortlist taste and outreach tone scoring before the agent ever goes live in a customer's tenant.",
   "why": "The taste call is scoping to evaluation, not to building more agents. Spott already has agents; they don't have a moat around them. The moat is the closed loop on their customers' historical data - and an outsider built that.",
   "terms": [
